@@ -1175,3 +1175,19 @@ section {
     margin-bottom: 6px; /* give space between icon & text */
   }
 }
+.phone-link {
+  color: white !important;
+  text-decoration: none !important;
+  -webkit-text-fill-color: white !important; /* iPhone fix */
+}
+a[href^="tel"] {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.email-no-link {
+  color: #000 !important;
+  text-decoration: none !important;
+  font-weight: 500;
+  cursor: default;
+}

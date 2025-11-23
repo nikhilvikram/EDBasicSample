@@ -10,9 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-<link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -23,6 +26,7 @@
       <div class="nav-left">
         <div class="brand">Nikhil Bisen</div>
       </div>
+
       <nav class="nav-links" aria-label="Main navigation">
         <a href="#hero">Home</a>
         <a href="#about">About</a>
@@ -35,32 +39,29 @@
     </header>
 
     <!-- HERO -->
-<section id="hero" class="hero">
-  <div class="hero-inner container">
+    <section id="hero" class="hero">
+      <div class="hero-inner container">
+        <h1 class="hero-title">
+          Hi, I'm <span class="highlight">Nikhil Bisen</span>
+        </h1>
 
-    <h1 class="hero-title">
-      Hi, I'm <span class="highlight">Nikhil Bisen</span>
-    </h1>
+        <p class="hero-subtitle">
+          Software Engineer • Frontend Developer • Cloud-Native Builder
+        </p>
 
-    <p class="hero-subtitle">
-      Software Engineer • Frontend Developer • Cloud-Native Builder
-    </p>
+        <p class="hero-description">
+          I design and engineer clean, scalable, and high-performance
+          applications using React, Node.js, and Google Cloud. I’ve worked on
+          enterprise-level Chrome projects, built modular UI engines, automated
+          CI/CD pipelines, and delivered fast, reliable frontend systems.
+        </p>
 
-    <p class="hero-description">
-      I design and engineer clean, scalable, and high-performance applications 
-      using React, Node.js, and Google Cloud.  
-      I’ve worked on enterprise-level Chrome projects, built modular UI engines, 
-      automated CI/CD pipelines, and delivered fast, reliable frontend systems.
-    </p>
-
-    <div class="btn-row">
-      <a class="btn btn-primary" href="#about">Explore My Work</a>
-      <a class="btn btn-outline" href="#contact">Get In Touch</a>
-    </div>
-
-  </div>
-</section>
-
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#about">Explore My Work</a>
+          <a class="btn btn-outline" href="#contact">Get In Touch</a>
+        </div>
+      </div>
+    </section>
 
     <!-- ABOUT -->
     <section id="about">
@@ -69,9 +70,7 @@
           <div class="left">
             <h2>About Me</h2>
 
-            <blockquote
-              style="font-style: italic; color: #0f172a; margin: 12px 0"
-            >
+            <blockquote style="font-style: italic; margin: 12px 0">
               "A software engineer passionate about building scalable systems,
               clean UI, and cloud-native applications."
             </blockquote>
@@ -80,8 +79,7 @@
               I’m <strong>Nikhil Bisen</strong>, a Software Engineer with 5+
               years of experience working on cloud-native applications, frontend
               engineering, CI/CD pipelines, and high-impact development for
-              Google Chrome projects. I specialize in React.js, Node.js, Python,
-              GCP, testing, and performance-driven engineering.
+              Google Chrome projects.
             </p>
 
             <p class="lead">
@@ -90,7 +88,7 @@
               contributing to Google Open Source initiatives.
             </p>
 
-            <ul style="margin: 12px 0; padding-left: 18px; line-height: 1.6">
+            <ul class="profile-list">
               <li>
                 <strong>Role:</strong> Software Engineer (Cybage, Google Chrome
                 Projects)
@@ -102,23 +100,27 @@
                 <strong>Skills:</strong> React, Node, Python, GCP, CI/CD, TDD
               </li>
               <li><strong>Location:</strong> Pune, India</li>
-              <li><strong>Email:</strong> nikhilbisen25@gmail.com</li>
-              <li class="fas fa-phone link-detail"><strong>Phone:</strong> +919767853662</li>
+              <li>
+                <strong>Email:</strong>
+                <span class="email-no-link">nikhilbisen25@gmail.com</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <strong>Phone:</strong> +91 9767853662
+              </li>
             </ul>
 
             <p><a class="btn btn-outline" href="#contact">Get in Touch</a></p>
           </div>
 
           <div class="right">
-            <!-- <img src="assets\nikhilbisen3.jpg" alt="Nikhil Bisen" /> -->
-            <img src="assets\nikhilbisen2.jpg" alt="Nikhil Bisen" />
+            <img src="assets/nikhilbisen2.jpg" alt="Nikhil Bisen" />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ARTICLES & INSIGHTS -->
-
+    <!-- BISEN ENTERPRISE -->
     <section id="bisenEnterprise" class="project-showcase-section">
       <div class="container">
         <!-- PROJECT HEADER -->
@@ -126,6 +128,7 @@
           <h2 class="section-title">
             BisenEnterprise — React E-Commerce Platform
           </h2>
+
           <p class="section-subtitle">
             A fast, modular, and scalable ecommerce frontend built using React +
             Vite with complete product listing, wishlist, cart, and category
@@ -139,7 +142,7 @@
           >
             <img
               src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-              alt="GitHub logo"
+              alt="GitHub"
             />
             github.com/nikhilvikram/BisenEnterprise
           </a>
@@ -150,48 +153,53 @@
           <!-- SLIDER -->
           <div class="slider-container">
             <div class="slider">
-              <!-- <img
-                src="assets\BisenEnterprise01.png"
-                alt="BisenEnterprise Screenshot 1"
-                class="slide active"
-              />
-              <img
-                src="assets\BisenEnterprise02.png"
-                alt="BisenEnterprise Screenshot 2"
-                class="slide"
-              />
-              <img
-                src="assets\BisenEnterprise03.png"
-                alt="BisenEnterprise Screenshot 3"
-                class="slide"
-              />
-              <img
-                src="assets\BisenEnterprise04.png"
-                alt="BisenEnterprise Screenshot 4"
-                class="slide"
-              /> -->
-              <div class="slider">
-  <picture>
-    <source media="(max-width: 768px)" srcset="assets\mobile\BisenEnterprise01_mobile.png">
-    <img src="assets\BisenEnterprise01.png" class="slide active">
-  </picture>
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="assets/mobile/BisenEnterprise01_mobile.png"
+                />
+                <img
+                  src="assets/BisenEnterprise01.png"
+                  class="slide active"
+                  alt="Screenshot 1"
+                />
+              </picture>
 
-  <picture>
-    <source media="(max-width: 768px)" srcset="assets\mobile\BisenEnterprise02_mobile.png">
-    <img src="assets\BisenEnterprise02.png" class="slide">
-  </picture>
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="assets/mobile/BisenEnterprise02_mobile.png"
+                />
+                <img
+                  src="assets/BisenEnterprise02.png"
+                  class="slide"
+                  alt="Screenshot 2"
+                />
+              </picture>
 
-  <picture>
-    <source media="(max-width: 768px)" srcset="assets\mobile\BisenEnterprise03_mobile.png">
-    <img src="assets\BisenEnterprise03.png" class="slide">
-  </picture>
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="assets/mobile/BisenEnterprise03_mobile.png"
+                />
+                <img
+                  src="assets/BisenEnterprise03.png"
+                  class="slide"
+                  alt="Screenshot 3"
+                />
+              </picture>
 
-  <picture>
-    <source media="(max-width: 768px)" srcset="assets\mobile\BisenEnterprise04_mobile.png">
-    <img src="assets\BisenEnterprise04.png" class="slide">
-  </picture>
-</div>
-
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="assets/mobile/BisenEnterprise04_mobile.png"
+                />
+                <img
+                  src="assets/BisenEnterprise04.png"
+                  class="slide"
+                  alt="Screenshot 4"
+                />
+              </picture>
             </div>
 
             <div class="slider-controls">
@@ -200,12 +208,13 @@
               <span class="dot"></span>
               <span class="dot"></span>
             </div>
-            <!-- new manual control bars -->
+
+            <!-- Manual arrows -->
             <div class="arrow left-arrow">&#10094;</div>
             <div class="arrow right-arrow">&#10095;</div>
-            <!-- DETAILS -->
           </div>
 
+          <!-- DETAILS -->
           <div class="project-info">
             <h3>Project Overview</h3>
             <p>
@@ -220,40 +229,34 @@
               <span class="tech">React.js</span>
               <span class="tech">Vite</span>
               <span class="tech">React Router</span>
-              <span class="tech">JavaScript (ES6)</span>
-              <span class="tech">HTML / CSS</span>
+              <span class="tech">JavaScript</span>
+              <span class="tech">HTML/CSS</span>
               <span class="tech">State Management</span>
-              <span class="tech">Modular Components</span>
             </div>
 
             <h3>Features</h3>
             <ul class="feature-list">
-              <li>
-                Dynamic product listing (Saree, Kurta, Textile categories)
-              </li>
-              <li>
-                Reusable component architecture (Card, Navbar, Footer, Sidebar)
-              </li>
-              <li>Product detail pages built with React Router</li>
-              <li>Cart & Wishlist functionality from React state</li>
-              <li>Mobile responsive layout optimized for performance</li>
-              <li>Clean code structure & scalable folder architecture</li>
+              <li>Dynamic product listings (Saree, Kurta, Textile)</li>
+              <li>Reusable component architecture</li>
+              <li>Product detail pages</li>
+              <li>Cart & Wishlist management</li>
+              <li>Responsive & fast layout</li>
             </ul>
 
             <h3>My Role</h3>
             <ul class="feature-list">
-              <li>Designed the entire UI UX layout</li>
-              <li>Built reusable component library</li>
-              <li>Implemented product listing + API structure</li>
-              <li>Created cart/wishlist logic</li>
-              <li>Wrote clean React code with best practices</li>
-              <li>Handled Vite configuration and GitHub repo setup</li>
+              <li>Designed entire UI/UX</li>
+              <li>Developed reusable component system</li>
+              <li>Built product API structure</li>
+              <li>Implemented cart/wishlist logic</li>
+              <li>Configured Vite & GitHub repo</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects" class="section project-section">
       <div class="container">
         <h2 class="section-title">Professional Projects</h2>
@@ -263,9 +266,8 @@
             <h3>Google Chrome Development (Cloud Native)</h3>
             <p>
               Led full-stack development for Chrome analytics dashboards using
-              <strong>React.js + Node.js</strong>, integrated backend APIs,
-              improved team productivity by 20%, automated deployments using
-              <strong>Kokoro CI/CD</strong>, and ensured 100% test coverage.
+              React + Node, integrated backend APIs, automated CI/CD, and
+              improved team productivity.
             </p>
             <a class="card-cta" href="#">View Details</a>
           </div>
@@ -273,9 +275,8 @@
           <div class="card">
             <h3>Password Manager (Google Open Source)</h3>
             <p>
-              Built secure authentication and encrypted storage using Google’s
-              security standards, contributed cross-functionally, and deployed
-              using <strong>GCP</strong> and Bracket (AngularJS-like).
+              Built secure authentication and encrypted storage using Google's
+              security practices and deployed using GCP.
             </p>
             <a class="card-cta" href="#">View Details</a>
           </div>
@@ -284,17 +285,19 @@
             <h3>Cloud Deployment & Testing Automation</h3>
             <p>
               Created CI/CD flows, integrated app.yaml, automated cloud
-              workflows, and improved release consistency through
-              <strong>TDD, Jest, Karma, PyTest</strong>.
+              workflows, and improved reliability using TDD.
             </p>
             <a class="card-cta" href="#">View Details</a>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- SPEAKING -->
     <section id="speaking" class="section speaking-section">
       <div class="container">
         <h2 class="section-title">What I Can Help With</h2>
+
         <p class="muted">
           Areas where I bring strong engineering value & collaboration.
         </p>
@@ -308,11 +311,13 @@
           <div class="topic">Test Driven Development</div>
         </div>
 
-            <p class="cta-row">
-              <a class="btn btn-outline" href="#contact">Work Together</a>
-            </p>
+        <p class="cta-row">
+          <a class="btn btn-outline" href="#contact">Work Together</a>
+        </p>
+      </div>
     </section>
 
+    <!-- FOUNDATION -->
     <section id="foundation" class="section foundation-section">
       <div class="container">
         <div class="foundation-grid">
@@ -324,7 +329,7 @@
               I believe great software is built through collaboration, clarity,
               and continuous improvement. My mission is to build scalable
               cloud-native systems, contribute to open-source communities, and
-              help teams deliver quality products using modern engineering
+              help teams deliver high-quality products using modern engineering
               practices.
             </p>
 
@@ -333,120 +338,145 @@
             </p>
           </div>
 
-          <div class="foundation-media">
+          <div class="foundation-media"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-wrapper">
+      <div class="contact-container">
+        <h2 class="section-title">Let’s Connect</h2>
+
+        <p class="contact-subtitle">
+          Feel free to reach out for collaborations, projects, or opportunities.
+        </p>
+
+        <div class="contact-grid">
+          <!-- CONTACT FORM -->
+          <div class="contact-form glass-card">
+            <form id="contactForm">
+              <div class="form-row">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+                required
+              ></textarea>
+
+              <button type="submit" class="btn btn-primary contact-btn">
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <!-- CONTACT INFO -->
+          <div class="contact-details glass-card">
+            <h3>Contact Information</h3>
+
+            <div class="info-row">
+              <i class="fas fa-envelope"></i>
+              <a class="link-detail" href="mailto:nikhilbisen25@gmail.com">
+                nikhilbisen25@gmail.com
+              </a>
+            </div>
+
+            <div class="info-row">
+              <i class="fas fa-phone"></i> +91 9767853662
+            </div>
+
+            <div class="info-row">
+              <i class="fab fa-linkedin"></i>
+              <a
+                class="link-detail"
+                href="https://linkedin.com/in/nikhil-bisen-4a2b17169"
+                target="_blank"
+              >
+                LinkedIn Profile
+              </a>
+            </div>
+
+            <div class="social-icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-github"></i>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="contact-wrapper">
-  <div class="contact-container">
+    <!-- FOOTER -->
+    <footer class="nb-footer">
+      <div class="footer-top">
+        <div class="footer-social">
+          <span>Follow me</span>
 
-    <h2 class="section-title">Let’s Connect</h2>
-    <p class="contact-subtitle">Feel free to reach out for collaborations, projects, or opportunities.</p>
+          <a href="#" class="fa-icon"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="fa-icon"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="fa-icon"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="fa-icon"><i class="fab fa-linkedin"></i></a>
+        </div>
 
-    <div class="contact-grid">
-
-      <!-- CONTACT FORM -->
-      <div class="contact-form glass-card">
-        <form id="contactForm">
-          <div class="form-row">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="email" placeholder="Your Email" required />
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Portfolio</h4>
+            <a href="#about">About Me</a>
+            <a href="#bisenEnterprise">BisenEnterprise</a>
+            <a href="#projects">Projects</a>
+            <a href="#speaking">Speaking Topics</a>
           </div>
 
-          <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+          <div class="footer-column">
+            <h4>Resources</h4>
+            <a href="https://github.com/nikhilvikram" target="_blank">GitHub</a>
+            <a
+              href="https://linkedin.com/in/nikhil-bisen-4a2b17169"
+              target="_blank"
+              >LinkedIn</a
+            >
+            <a href="mailto:nikhilbisen25@gmail.com">Email Me</a>
+          </div>
 
-          <button type="submit" class="btn btn-primary contact-btn">Send Message</button>
-        </form>
-      </div>
+          <div class="footer-column">
+            <h4>Company</h4>
+            <a href="#">About This Site</a>
+            <a href="#">Terms & Privacy</a>
+            <a href="#">Open Source</a>
+          </div>
 
-      <!-- CONTACT INFO -->
-      <div class="contact-details glass-card">
-        <h3>Contact Information</h3>
-
-        <div class="info-row">
-          <i class="fas fa-envelope "></i>
-          <a class="link-detail" href="mailto:nikhilbisen25@gmail.com">nikhilbisen25@gmail.com</a>
+          <div class="footer-column">
+            <h4>Support</h4>
+            <a href="#contact">Contact</a>
+            <a href="#">Help Center</a>
+            <a href="#">Report Issue</a>
+          </div>
         </div>
+      </div>
 
-        <div class="info-row">
-          <i class="fas fa-phone link-detail"></i>
-          +919767853662
+      <div class="footer-bottom">
+        <div class="footer-left">© <span id="year"></span> Nikhil Bisen</div>
+
+        <div class="footer-right">
+          <a href="#">Help</a>
+          <a href="#">English - India</a>
         </div>
-
-        <div class="info-row">
-          <i class="fab fa-linkedin"></i>
-          <a class="link-detail" href="https://linkedin.com/in/nikhil-bisen-4a2b17169" target="_blank">LinkedIn Profile</a>
-        </div>
-
-        <div class="social-icons">
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-github"></i>
-        </div>
-
       </div>
-
-    </div>
-  </div>
-</section>
-
-<footer class="nb-footer">
-  <div class="footer-top">
-
-    <!-- Social Row -->
-    <div class="footer-social">
-      <span>Follow me</span>
-  <a href="#" class="fa-youtube fa-icon"><i class="fab fa-youtube"></i></a>
-  <a href="#" class="fa-x fa-icon"><i class="fab fa-x-twitter"></i></a>
-  <a href="#" class="fa-facebook fa-icon"><i class="fab fa-facebook"></i></a>
-  <a href="#" class="fa-linkedin fa-icon"><i class="fab fa-linkedin"></i></a>
-    </div>
-
-    <!-- Link Groups -->
-    <div class="footer-links">
-
-      <div class="footer-column">
-        <h4>Portfolio</h4>
-        <a href="#about">About Me</a>
-        <a href="#bisenEnterprise">BisenEnterprise</a>
-        <a href="#projects">Projects</a>
-        <a href="#speaking">Speaking Topics</a>
-      </div>
-
-      <div class="footer-column">
-        <h4>Resources</h4>
-        <a href="https://github.com/nikhilvikram" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/nikhil-bisen-4a2b17169" target="_blank">LinkedIn</a>
-        <a href="mailto:nikhilbisen25@gmail.com">Email Me</a>
-      </div>
-
-      <div class="footer-column">
-        <h4>Company</h4>
-        <a href="#">About This Site</a>
-        <a href="#">Terms & Privacy</a>
-        <a href="#">Open Source</a>
-      </div>
-
-      <div class="footer-column">
-        <h4>Support</h4>
-        <a href="#contact">Contact</a>
-        <a href="#">Help Center</a>
-        <a href="#">Report Issue</a>
-      </div>
-
-    </div>
-  </div>
-</footer>
-  <div class="footer-bottom">
-    <div class="footer-left">© <span id="year"></span> Nikhil Bisen</div>
-
-    <div class="footer-right">
-      <a href="#">Help</a>
-      <a href="#">English - India</a>
-    </div>
-  </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
