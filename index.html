@@ -35,21 +35,32 @@
     </header>
 
     <!-- HERO -->
-    <section id="hero" class="hero">
-      <div class="hero-inner container">
-        <h1>Nikhil Bisen</h1>
-        <div class="title-small">Governance • Risk • Compliance Executive</div>
-        <p class="tagline">
-          Thought leader, speaker, and strategic advisor focused on effective
-          governance and resilient organizations.
-        </p>
+<section id="hero" class="hero">
+  <div class="hero-inner container">
 
-        <div class="btn-row" role="region" aria-label="Hero CTAs">
-          <a class="btn btn-primary" href="#about">Learn More</a>
-          <a class="btn btn-outline" href="#contact">Request Speaking</a>
-        </div>
-      </div>
-    </section>
+    <h1 class="hero-title">
+      Hi, I'm <span class="highlight">Nikhil Bisen</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      Software Engineer • Frontend Developer • Cloud-Native Builder
+    </p>
+
+    <p class="hero-description">
+      I design and engineer clean, scalable, and high-performance applications 
+      using React, Node.js, and Google Cloud.  
+      I’ve worked on enterprise-level Chrome projects, built modular UI engines, 
+      automated CI/CD pipelines, and delivered fast, reliable frontend systems.
+    </p>
+
+    <div class="btn-row">
+      <a class="btn btn-primary" href="#about">Explore My Work</a>
+      <a class="btn btn-outline" href="#contact">Get In Touch</a>
+    </div>
+
+  </div>
+</section>
+
 
     <!-- ABOUT -->
     <section id="about">
@@ -139,7 +150,7 @@
           <!-- SLIDER -->
           <div class="slider-container">
             <div class="slider">
-              <img
+              <!-- <img
                 src="assets\BisenEnterprise01.png"
                 alt="BisenEnterprise Screenshot 1"
                 class="slide active"
@@ -158,7 +169,29 @@
                 src="assets\BisenEnterprise04.png"
                 alt="BisenEnterprise Screenshot 4"
                 class="slide"
-              />
+              /> -->
+              <div class="slider">
+  <picture>
+    <source media="(max-width: 768px)" srcset="assets\mobile\BisenEnterprise01_mobile.png">
+    <img src="assets\BisenEnterprise01.png" class="slide active">
+  </picture>
+
+  <picture>
+    <source media="(max-width: 768px)" srcset="assets\mobile\BisenEnterprise02_mobile.png">
+    <img src="assets\BisenEnterprise02.png" class="slide">
+  </picture>
+
+  <picture>
+    <source media="(max-width: 768px)" srcset="assets\mobile\BisenEnterprise03_mobile.png">
+    <img src="assets\BisenEnterprise03.png" class="slide">
+  </picture>
+
+  <picture>
+    <source media="(max-width: 768px)" srcset="assets\mobile\BisenEnterprise04_mobile.png">
+    <img src="assets\BisenEnterprise04.png" class="slide">
+  </picture>
+</div>
+
             </div>
 
             <div class="slider-controls">
