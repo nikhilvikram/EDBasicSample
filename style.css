@@ -263,13 +263,18 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
-  margin-top: 18px;
+  /* margin-top: 18px; */
 }
 .card {
   background: var(--white);
   padding: 18px;
   border-radius: 10px;
   box-shadow: 0 6px 18px rgba(10, 31, 68, 0.06);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* optional */
+  height: 100%; /* important */
 }
 .card h3 {
   font-size: 18px;
@@ -278,16 +283,19 @@ section {
 .card p {
   font-size: 14px;
   color: #475569;
+  flex-grow: 1; /* pushes content upward */
 }
 .card .card-cta {
   display: inline-block;
-  margin-top: 12px;
+  margin-top: auto;
+  align-self: flex-start; /* keeps alignment clean */
   padding: 8px 12px;
   border-radius: 8px;
   border: 2px solid var(--gold);
   color: var(--gold);
   text-decoration: none;
   font-weight: 700;
+  position: relative;
 }
 
 /* Speaking */
