@@ -211,6 +211,10 @@ section {
 .about .right {
   flex: 1;
 }
+
+.about .right {
+  margin-top: 40px;
+}
 .about img {
   width: 100%;
   max-width: 380px;
@@ -368,6 +372,21 @@ section {
   gap: 8px;
 }
 
+@media (max-width: 768px) {
+  .slider-controls {
+    bottom: 10px;
+    gap: 6px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+  .about .right {
+    margin-top: 0;
+  }
+}
+
 .slide {
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
@@ -410,6 +429,12 @@ section {
 /* Right arrow */
 .right-arrow {
   right: 18px;
+}
+
+@media (max-width: 768px) {
+  .arrow {
+    display: none !important;
+  }
 }
 
 .dot {
@@ -532,7 +557,12 @@ footer {
 
 @media (max-width: 768px) {
   .slider-container {
-    height: 300px; /* smaller for mobile */
+    height: 650px; /* smaller for mobile */
+  }
+  .slide {
+    object-fit: contain; /* image fits without cropping */
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -622,6 +652,17 @@ section {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .showcase-card {
+    padding: 20px;
+  }
+
+  .slider-container {
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
 }
 
 /* Slider */
@@ -726,4 +767,246 @@ section {
 
 .feature-list li::marker {
   color: #cda434;
+}
+
+/* MOBILE RESPONSIVE FIX FOR SLIDER */
+@media (max-width: 768px) {
+  /* Hide arrows */
+  .arrow {
+    display: none !important;
+  }
+
+  /* Adjust slider container */
+  .slider-container {
+    height: 320px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  /* Image scaling */
+  .slide {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* Dots */
+  .slider-controls {
+    bottom: 10px;
+    gap: 6px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* Smaller card padding */
+  .showcase-card {
+    padding: 20px;
+  }
+}
+
+/* =======================
+   GOOGLE STYLE FOOTER
+======================= */
+
+.nb-footer {
+  background: rgba(77, 81, 82, 0.95);
+  padding: 40px 40px 20px;
+  margin-top: 80px;
+  border-top: 1px solid #e5e7eb;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+/* Social row */
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 30px;
+}
+.footer-social span {
+  font-weight: 700;
+  color: #ececec;
+}
+.footer-social a {
+  font-size: 20px;
+  text-decoration: none;
+  opacity: 0.85;
+}
+.footer-social a:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Link grid */
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.footer-column h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #e3e6eb;
+}
+.footer-column a {
+  display: block;
+  color: #dee3eb;
+  text-decoration: none;
+  padding: 4px 0;
+}
+.footer-column a:hover {
+  color: #9ab5f1;
+}
+
+/* Bottom line */
+.footer-bottom {
+  border-top: 1px solid #e5e7eb;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #eceef3;
+  background-color: rgba(10, 31, 68, 0.95);
+}
+.footer-bottom a {
+  text-decoration: none;
+  margin-left: 16px;
+  color: #e0e3e9;
+}
+.footer-bottom a:hover {
+  color: #6b9be9;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-links {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 20px 0;
+  font-size: 18px;
+}
+
+.footer-social .fa-icon {
+  color: #444;
+  font-size: 26px; /* bigger icons */
+  transition: 0.25s;
+}
+
+.footer-social .fa-icon:hover {
+  color: #0a1f44; /* subtle hover */
+  transform: scale(1.2);
+}
+
+/* Base styling */
+.fa-icon {
+  font-size: 30px;
+  transition: 0.25s ease;
+}
+
+/* Original brand colors */
+.fa-youtube i {
+  color: #ff0000;
+}
+
+.fa-x i {
+  color: #000000;
+}
+
+.fa-facebook i {
+  color: #1877f2;
+}
+
+.fa-linkedin i {
+  color: #0a66c2;
+}
+
+.fa-tiktok i {
+  color: #000000;
+}
+
+/* Hover effects (slight zoom) */
+.fa-icon:hover {
+  transform: scale(1.2);
+}
+/* ---------- STRONG OVERRIDE: remove any box / bg / outline around social icons ---------- */
+
+/* target all variants used in earlier conversation */
+.footer-social a,
+.footer-social .fa-icon,
+.footer-social .social-icon,
+.social-icons a,
+.social-icons i,
+.fa-icon,
+.fa-icon i {
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  padding: 0 !important; /* remove extra clickable padding */
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 0 !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+}
+
+/* remove any pseudo element decorations */
+.footer-social a::before,
+.footer-social a::after,
+.social-icons a::before,
+.social-icons a::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* if the anchor itself has a background image or gradient, remove it */
+.footer-social a,
+.social-icons a {
+  background-image: none !important;
+  background-color: transparent !important;
+}
+
+/* make sure the <i> has no background or border */
+.footer-social i,
+.social-icons i {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* ensure focus/focus-visible doesn't show ring */
+.footer-social a:focus,
+.social-icons a:focus,
+.footer-social a:focus-visible,
+.social-icons a:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
 }
