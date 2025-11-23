@@ -1175,12 +1175,3 @@ section {
     margin-bottom: 6px; /* give space between icon & text */
   }
 }
-
-.phone-link {
-  color: white !important;
-  text-decoration: none !important;
-  -webkit-text-fill-color: white !important; /* iPhone fix */
-}
-.my_Phone {
-  color: black;
-}
